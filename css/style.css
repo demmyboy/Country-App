@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=lemonda:wght@100;400;700&display=swap');
+
+/* * mean you wanna apply to everything  */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: lavender;
+    font-family: 'Poppins', 'sans-serif';
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.user-form {
+    width: 100%;
+    max-width: 800px;
+    padding: 1rem;
+}
+
+.user-form input {
+    width: 100%;
+    border-radius: 20px;
+    border: none;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    font-family: inherit;
+    font-size: 1rem;
+    background-color: #bbb;
+}
+
+.user-form input::placeholder {
+    font-family: 'lemonda';
+    color: #000;
+}
+
+.cards {
+    display: flex;
+    max-width: 800px;
+    border-radius: 20px;
+    padding: 1rem;
+    margin: 0 1.5rem;
+    background-color: #bbb;
+}
+
+.flag {
+    height: 150px;
+    width: 300px;
+    border-radius: 10%
+}
+
+.country-info {
+    margin-left: 1rem;
+}
