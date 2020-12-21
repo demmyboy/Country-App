@@ -19,7 +19,16 @@ async function getCountry() {
     }
 }
 
+function seperateNmberWithCommas(x) {
+    var parts = x.toString().split(".");
+    parts[0] = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    return parts.join(".");
+}
+
+
+
 function createCountryCard(country) {
+    let population = country[0].population
     const cardHTML = `
         <div class="cards">
             <div>
@@ -30,9 +39,11 @@ function createCountryCard(country) {
                 <h5>Capital : ${country[0].capital}</h5>
                 <h5>Continent : ${country[0].region}</h5>
                 <h5>Subregion : ${country[0].subregion}</h5>
-                <h5> Population : ${country[0].population} </h5>
-                <h5>Telephone Code :  ${country[0].callingCodes}</h5>
-                <h5>Language :  ${country[0].languages[0].name}</h5>              
+                <h5> Population : ${seperateNmberWithCommas(population)} million </h5>
+                <h5>Telephone Code :  +${country[0].callingCodes}</h5>
+                <h5>Language :  ${country[0].languages[0].name}</h5>  
+                <h5>Currency :  ${country[0].currencies[0].name}</h5> 
+                <h5>Currency symbol :  ${country[0].currencies[0].symbol}</h5>            
             </div>
         </div>
     `
