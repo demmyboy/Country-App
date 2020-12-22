@@ -21,7 +21,7 @@ body {
     position: absolute;
     width: calc(100vw + 60px);
     height: calc(100vh + 60px);
-    filter: blur(8px);
+    filter: blur(10px);
     z-index: -1;
 }
 
@@ -62,8 +62,8 @@ body {
 
 .flag {
     height: 150px;
-    width: 300px;
-    border-radius: 10%
+    width: 250px;
+    border-radius: 5px;
 }
 
 .country-info {

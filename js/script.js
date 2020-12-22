@@ -8,7 +8,7 @@ const form = document.getElementById('form')
 async function getCountry() {
     try {
         const country = search.value
-        const res = await axios.get(`${API_URL}${country}`)
+        const res = await axios.get(`${API_URL}${country}?fullText=true`)
         createCountryCard(res.data)
             // console.log(res.data[0].languages)
     } catch (err) {
@@ -35,15 +35,15 @@ function createCountryCard(country) {
                 <img class="flag" src="${country[0].flag}" alt="Flag">
             </div>
             <div class="country-info">
-                <h5> Country : ${country[0].name}</h5>
-                <h5>Capital : ${country[0].capital}</h5>
-                <h5>Continent : ${country[0].region}</h5>
-                <h5>Subregion : ${country[0].subregion}</h5>
-                <h5> Population : ${seperateNmberWithCommas(population)} million </h5>
-                <h5>Telephone Code :  +${country[0].callingCodes}</h5>
-                <h5>Language :  ${country[0].languages[0].name}</h5>  
-                <h5>Currency :  ${country[0].currencies[0].name}</h5> 
-                <h5>Currency symbol :  ${country[0].currencies[0].symbol}</h5>            
+                <h6> <i class="fa fa-map fa-lg" aria-hidden="true"></i>  ${country[0].name}</h6>
+                <h6> <i class="fa fa-building fa-lg" aria-hidden="true"></i>  ${country[0].capital}</h6>
+                <h6><i class="fa fa-globe fa-lg" aria-hidden="true"></i> ${country[0].region}</h6>
+                <h6><i class="fa fa-map-marker fa-lg" aria-hidden="true"></i> ${country[0].subregion}</h6>
+                <h6> <i class="fa fa-users fa-lg" aria-hidden="true"></i> ${seperateNmberWithCommas(population)} million </h6>
+                <h6><i class="fa fa-phone fa-lg" aria-hidden="true"></i>  +${country[0].callingCodes}</h6>
+                <h6><i class="fa fa-language fa-lg" aria-hidden="true"></i>  ${country[0].languages[0].name}</h6>  
+                <h6> <i class="fa fa-credit-card fa-lg" aria-hidden="true"></i> ${country[0].currencies[0].name}</h6> 
+                <h6><i class="fa fa-credit-card" aria-hidden="true"></i>  ${country[0].currencies[0].symbol}</h6>            
             </div>
         </div>
     `
