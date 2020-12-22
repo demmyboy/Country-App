@@ -11,7 +11,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     height: 120vh;
     overflow-x: hidden;
 }
@@ -58,6 +58,10 @@ body {
     padding: 1rem;
     margin: 0 1.5rem;
     background-color: #fff;
+}
+
+.country-info {
+    margin: 1rem;
 }
 
 .flag {
