@@ -47,7 +47,7 @@ function createCountryCard(country) {
                 <h5> <i class="fa fa-internet-explorer" aria-hidden="true"></i> ${country[0].topLevelDomain} </h5>
                     
             </div>
-            <div class="country-info">
+            <div class="country-info mr-5">
     
                 <small>Population</small>   
                 <h5> <i class="fa fa-users " aria-hidden="true"></i> ${seperateNmberWithCommas(population)} million </h5>
