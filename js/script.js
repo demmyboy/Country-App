@@ -34,7 +34,7 @@ function createCountryCard(country) {
             <div>
                 <img class="flag" src="${country[0].flag}" alt="Flag">
             </div>
-            <div class="country-info">
+            <div class="country-info mr-5">
                 <small>Country</small>
                 <h5> <i class="fa fa-map " aria-hidden="true"></i>  ${country[0].name} </h5>
                 <small>Capital</small>
@@ -48,7 +48,7 @@ function createCountryCard(country) {
                     
             </div>
             <div class="country-info">
-                
+    
                 <small>Population</small>   
                 <h5> <i class="fa fa-users " aria-hidden="true"></i> ${seperateNmberWithCommas(population)} million </h5>
                 <small>Phone Code</small>
