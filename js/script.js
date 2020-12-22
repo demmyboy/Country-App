@@ -50,7 +50,7 @@ function createCountryCard(country) {
             <div class="country-info ">
     
                 <small>Population</small>   
-                <h5> <i class="fa fa-users " aria-hidden="true"></i> ${seperateNmberWithCommas(population)} million </h5>
+                <h5> <i class="fa fa-users " aria-hidden="true"></i> ${seperateNmberWithCommas(population)}  </h5>
                 <small>Phone Code</small>
                 <h5><i class="fa fa-phone " aria-hidden="true"></i>  +${country[0].callingCodes}</h5>
                 <small>Language</small>
