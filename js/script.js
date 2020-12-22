@@ -35,15 +35,30 @@ function createCountryCard(country) {
                 <img class="flag" src="${country[0].flag}" alt="Flag">
             </div>
             <div class="country-info">
-                <h6> <i class="fa fa-map fa-lg" aria-hidden="true"></i>  ${country[0].name}</h6>
-                <h6> <i class="fa fa-building fa-lg" aria-hidden="true"></i>  ${country[0].capital}</h6>
-                <h6><i class="fa fa-globe fa-lg" aria-hidden="true"></i> ${country[0].region}</h6>
-                <h6><i class="fa fa-map-marker fa-lg" aria-hidden="true"></i> ${country[0].subregion}</h6>
-                <h6> <i class="fa fa-users fa-lg" aria-hidden="true"></i> ${seperateNmberWithCommas(population)} million </h6>
-                <h6><i class="fa fa-phone fa-lg" aria-hidden="true"></i>  +${country[0].callingCodes}</h6>
-                <h6><i class="fa fa-language fa-lg" aria-hidden="true"></i>  ${country[0].languages[0].name}</h6>  
-                <h6> <i class="fa fa-credit-card fa-lg" aria-hidden="true"></i> ${country[0].currencies[0].name}</h6> 
-                <h6><i class="fa fa-credit-card" aria-hidden="true"></i>  ${country[0].currencies[0].symbol}</h6>            
+                <small>Country</small>
+                <h5> <i class="fa fa-map " aria-hidden="true"></i>  ${country[0].name} </h5>
+                <small>Capital</small>
+                <h5> <i class="fa fa-building " aria-hidden="true"></i>  ${country[0].capital}</h5>
+                <small>Continent</small>
+                <h5><i class="fa fa-globe " aria-hidden="true"></i> ${country[0].region}</h5>
+                <small>Region</small> 
+                <h5><i class="fa fa-map-marker " aria-hidden="true"></i> ${country[0].subregion}</h5>
+                <small>Domain</small>   
+                <h5> <i class="fa fa-internet-explorer" aria-hidden="true"></i> ${country[0].topLevelDomain} </h5>
+                    
+            </div>
+            <div class="country-info">
+                
+                <small>Population</small>   
+                <h5> <i class="fa fa-users " aria-hidden="true"></i> ${seperateNmberWithCommas(population)} million </h5>
+                <small>Phone Code</small>
+                <h5><i class="fa fa-phone " aria-hidden="true"></i>  +${country[0].callingCodes}</h5>
+                <small>Language</small>
+                <h5><i class="fa fa-language " aria-hidden="true"></i>  ${country[0].languages[0].name}</h5>  
+                <small>Currency</small>    
+                <h5> <i class="fa fa-credit-card " aria-hidden="true"></i> ${country[0].currencies[0].name}</h5> 
+                <small>Currency Symbol</small> 
+                <h5><i class="fa fa-credit-card" aria-hidden="true"></i>  ${country[0].currencies[0].symbol}</h5>            
             </div>
         </div>
     `
