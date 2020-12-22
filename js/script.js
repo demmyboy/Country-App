@@ -7,7 +7,8 @@ const form = document.getElementById('form')
 
 async function getCountry() {
     try {
-        const country = search.value
+        let country = search.value.trim()
+
         const res = await axios.get(`${API_URL}${country}?fullText=true`)
         createCountryCard(res.data)
             // console.log(res.data[0].languages)
@@ -74,7 +75,7 @@ function createErrorCard(message) {
     main.innerHTML = cardHTML
 }
 searchBtn.addEventListener('click', () => {
-    const searchCountry = search.value
+    let searchCountry = search.value.trim()
     if (searchCountry) {
         getCountry()
         search.value = ''
@@ -84,7 +85,7 @@ searchBtn.addEventListener('click', () => {
 // Allows to use the enter button on keyboard
 form.addEventListener('submit', (e) => {
     e.preventDefault()
-    const searchCountry = search.value
+    const searchCountry = search.value.trim()
     if (searchCountry) {
         getCountry()
         search.value = ''
