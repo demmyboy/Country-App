@@ -61,7 +61,8 @@ body {
 }
 
 .country-info {
-    margin: 1rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
 }
 
 .flag {
@@ -87,7 +88,7 @@ body {
         margin-right: 5px;
     }
     body {
-        height: 150vh;
+        height: 130vh;
     }
     .country-info small {
         text-align: center;
