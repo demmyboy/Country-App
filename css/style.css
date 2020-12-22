@@ -80,4 +80,7 @@ body {
     .country-info h5 {
         font-size: 1.3rem
     }
+    .user-form {
+        margin-top: -200px;
+    }
 }
