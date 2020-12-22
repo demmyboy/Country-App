@@ -12,7 +12,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: 120vh;
     overflow-x: hidden;
 }
 
@@ -20,7 +20,7 @@ body {
     background: url('https://images.unsplash.com/photo-1529154631088-a0e516571c60?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
     position: absolute;
     width: calc(100vw + 60px);
-    height: calc(100vh + 60px);
+    height: calc(120vh + 60px);
     filter: blur(10px);
     z-index: -1;
 }
@@ -68,4 +68,17 @@ body {
 
 .country-info {
     margin-left: 1rem;
+}
+
+
+/* Portrait */
+
+@media(max-width: 500px) {
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+    .user-form {
+        max-width: 400px;
+    }
 }
