@@ -78,11 +78,14 @@ body {
         max-width: 400px;
     }
     .country-info h5 {
-        font-size: 1.1rem;
+        font-size: 1.2rem;
         text-align: center;
         margin-right: 5px;
     }
     body {
         height: 150vh;
+    }
+    .country-info small {
+        text-align: center;
     }
 }
